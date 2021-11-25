@@ -4,14 +4,15 @@ body {
   line-height: 1;
 }
 
-ul {
+/* ul {
   list-style-type: none;
-  background-color: #ff6961;
+  background-color: #ff6961; */
 
-}
+
 
 textarea {
   background: transparent;
+  /* background-color: tomato; */
   border: none;
   resize: none;
   color: #000000;
@@ -46,6 +47,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: 5px;  /*added*/
 }
 
 .past {
