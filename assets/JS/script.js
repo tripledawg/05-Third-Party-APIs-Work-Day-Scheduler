@@ -1,9 +1,24 @@
 //Today's date
 
 var today = moment();
-$("#currentDay").text(today.format("dddd, MMMM do"));  //day spelled out, month spelled out, day of,  NO YEAR
+$("#currentDay").text(today.format("dddd, MMMM Do"));  //day spelled out, month spelled out, day of,  NO YEAR
 
-// var currentHour = parseInt(moment().format('H'));
+ var currentHour = parseInt(moment().format('HH'));//military time
+
+ var textAreas = $('textarea'); 
+
+ textAreas.each(function(){
+    $(this).removeClass("past present future");
+     var hour = $(this).attr("id"); 
+     if (hour < currentHour) {
+        $(this).addClass("past");
+     } else if (hour == currentHour){
+        $(this).addClass("present");
+     } else {
+         $(this).addClass("future"); 
+     }
+ });
+
 
 // var timeBlockEl = $('.time-block');
 // var descriptionEl = $('.description');
