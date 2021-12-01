@@ -4,7 +4,7 @@
 [screenshot](/assets/work-day-planner-screenshot.png)
 
 **URL of deployed web page**
-https://tripledawg.github.io/
+https://tripledawg.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
 
 
 ## css

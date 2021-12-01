@@ -3,9 +3,7 @@ var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do"));  //day spelled out, month spelled out, day of,  NO YEAR
 //Day Planner body//
 var currentHour = parseInt(moment().format("HH"));
-// $( document ).ready(function() {
-//    //then load local storage and color timeblocks accd to time
-// });
+
 //function to clear out time blocks, assign background color based on currentHour variable, store the status of the background and load any previously saved events.
 $("textarea").each(function () {
    $(this).removeClass("past present future");
