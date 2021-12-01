@@ -1,5 +1,29 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+**Screenshot**  
+[screenshot](/assets/work-day-planner-screenshot.png)
+
+**URL of deployed web page**
+https://tripledawg.github.io/
+
+
+## css
+ I changed the text color to black for the past present and future classes to match the demo.  I also changed the save button's hover class color to black so that the font awesome button would change to black on hover.  
+
+## html
+I used the CSS classes already established to create my timeblocks.I used the grid layout of a container with rows and columns for the timeblaocks.  The time, text areas and save buttons were set to 1/10/1 respectively to match the demo look.  Each text area was assigned an integer reflecting military time for easy fucntion manipulation later.  The font awesome save button icon was nested in an i div inside the button div.  
+
+## JS/JQuery
+Current Day: 
+I used Jquery to set the current day display to mathc the format of: day spelled out, month spelled out, day of, and NO YEAR.  
+Text Area: 
+In global scope I created a varable to define the current hour.  
+I used JQuery to write a function that used removeClass to clear any previous past present or future classes.  I set a variable for the hour equal to the military time ids I set up in the html.  I then used if else statements for the comparison logic to assign css background color classes based on time of day.  I also used localStorage.getItem to bring up the value of any saved textarea content on page load. 
+To save the textarea content I created an on click button function.  I needed a way to call the text area and its respective value so I created a variable to store the text area id and a variable to store the textarea value.  Since the button was at the same level as the text area I used the siblings method instead of child or children.  I was then able to pass those varaiables into the localStorage.setItem function.  
+
+
+
+
 ## Your Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
