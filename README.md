@@ -1,7 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 **Screenshot**  
-[screenshot](/assets/work-day-planner-screenshot.png)
+[screenshot](/assets/work-day-planner-screenshot-800x800.png)
 
 **URL of deployed web page**
 https://tripledawg.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
